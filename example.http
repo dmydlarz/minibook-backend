@@ -1,0 +1,16 @@
+GET http://localhost:3000/ HTTP/1.1
+
+###
+
+GET http://localhost:3000/health HTTP/1.1
+
+###
+
+POST http://localhost:3000/v1/auth/login HTTP/1.1
+content-type: application/json
+
+{
+    "email":"john@minibook.io",
+    "password":"123456789"
+}
+###
